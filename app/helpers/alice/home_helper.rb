@@ -1,0 +1,2 @@
+module Alice::HomeHelper
+end

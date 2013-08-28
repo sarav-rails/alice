@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<title><%= title %></title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+<%== meta_data_tags %>
+<%= canonical_tag %>
+<%= favicon_link_tag image_path('favicon.ico') %>
+<%= stylesheet_link_tag 'store/all', :media => 'screen' %>
+<%= csrf_meta_tags %>
+<%= javascript_include_tag 'store/all' %>
+<link href="/assets/store/style_sheet.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/assets/store/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+<noscript>
+<link rel="stylesheet" type="text/css" href="/assets/store/noscript.css" />
+</noscript>
+
+
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+<![endif]-->
+<%= render "spree/shared/routes" %>
+<%= yield :head %>
